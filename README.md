@@ -1,1 +1,1 @@
-# Machine_learning_generic_project
+# EnD to end machine learning project Structure
