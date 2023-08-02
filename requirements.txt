@@ -6,6 +6,7 @@ contourpy==1.1.0
 cycler==0.11.0
 debugpy==1.6.7
 decorator==5.1.1
+dill==0.3.7
 executing==1.2.0
 fonttools==4.41.0
 ipykernel==6.24.0
@@ -17,7 +18,7 @@ jupyter_core==5.3.1
 kiwisolver==1.4.4
 matplotlib==3.7.2
 matplotlib-inline==0.1.6
--e git+https://github.com/drigger091/Machine_learning_generic_project.git@d69f5ef568fdd02fada98dfc0b413d78484a8d60#egg=ML_project
+-e git+https://github.com/drigger091/Machine_learning_generic_project.git@d4ac99c8606cc1ca5aa4ea1d595547e3c5f2430b#egg=ML_project
 nest-asyncio==1.5.6
 numpy==1.25.1
 packaging==23.1
