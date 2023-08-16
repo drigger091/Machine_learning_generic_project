@@ -6,6 +6,7 @@ from source.exception import CustomException
 import dill
 from sklearn.metrics import r2_score
 from sklearn.model_selection import GridSearchCV
+from source.logger import logging
 
 
 def save_object(file_path,obj):
@@ -36,9 +37,13 @@ def evaluate_models(X_train,Y_train,X_test,Y_test,models,param):
             gs = GridSearchCV(model,para,cv=3)
             gs.fit(X_train,Y_train)
 
+            logging.info("Hyperparameter tuning initiated")
+
             model.set_params(**gs.best_params_)
 
             model.fit(X_train,Y_train)  # train model
+
+            logging.info("The tuned model is used to predict")
 
             Y_train_pred = model.predict(X_train)
             Y_test_pred = model.predict(X_test) 
